@@ -34,7 +34,23 @@ var arrow = L.polyline([berlin, london], {
     weight: 4,           // Linienstärke
     opacity: 0.7         // Transparenz
 }).addTo(map);
+var arrowIcon = L.divIcon({
+    className: 'leaflet-div-icon',
+    html: '<div style="transform: rotate(' + angleBetweenCoordinates(berlin, london) + 'deg); font-size: 30px; color: blue;">→</div>',
+    iconSize: [30, 30],
+    iconAnchor: [15, 15]
+});
 
+// Marker für den Pfeilkopf am Ziel (London)
+L.marker(london, {icon: arrowIcon}).addTo(map);
+
+// Funktion zur Berechnung des Winkels zwischen den Koordinaten
+function angleBetweenCoordinates(start, end) {
+    var dx = end[1] - start[1];
+    var dy = end[0] - start[0];
+    var angle = Math.atan2(dy, dx) * 180 / Math.PI;
+    return angle;
+}
 // Beschriftung "1943" in der Mitte des Pfeils
 arrow.bindTooltip("1943", { 
     permanent: true,     // Immer sichtbar
