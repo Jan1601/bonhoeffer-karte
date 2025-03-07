@@ -2,8 +2,8 @@
 var map = L.map('map').setView([51.1657, 10.4515], 3);  // Deutschland als Mittelpunkt
 
 // OpenStreetMap-Karte laden
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; OpenStreetMap contributors'
+L.tileLayer('https://{s}.tile.openstreetmap.de/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap-Mitwirkende, Tiles by OpenStreetMap Deutschland'
 }).addTo(map);
 
 // Städte mit Koordinaten und Infos
