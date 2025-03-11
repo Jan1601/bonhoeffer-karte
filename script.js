@@ -25,37 +25,18 @@ locations.forEach(location => {
         .bindPopup(`<b>${location.name}</b><br>${location.info}`);
 });
 // Koordinaten für Berlin und London
+// Koordinaten für Berlin und London
 var berlin = [52.5200, 13.4050];  // Berlin
 var london = [51.5074, -0.1278];  // London
 
-function angleBetweenCoordinates(start, end) {
-    var dx = end[1] - start[1];
-    var dy = end[0] - start[0];
-    var angle = Math.atan2(dy, dx) * 180 / Math.PI;
-    return angle;
-}
-
-// Berechne den Winkel zwischen Berlin und London
-var angle = angleBetweenCoordinates(berlin, london);
-
-// Blauer Pfeil von Berlin nach London (PolyLine)
-var arrowLine = L.polyline([berlin, london], {
-    color: 'blue',       // Farbe der Linie
+// Blauer Pfeil von Berlin nach London
+var arrow = L.polyline([berlin, london], {
+    color: 'blue',       // Farbe des Pfeils
     weight: 4,           // Linienstärke
     opacity: 0.7,        // Transparenz
+    dashArray: '5, 10'   // Gepunktete Linie für besseren Look
 }).addTo(map);
 
-// Größe und Aussehen des Pfeilkopfes
-var arrowIcon = L.divIcon({
-    className: 'leaflet-div-icon',
-    html: '<div style="transform: rotate(' + angle + 'deg); font-size: 30px; color: blue;">→</div>',
-    iconSize: [30, 30],    // Größe des Pfeils
-    iconAnchor: [15, 15]   // Ankerpunkt des Pfeils
-});
-
-// Marker für den Pfeilkopf an der Spitze der Linie
-L.marker(london, {icon: arrowIcon}).addTo(map);
-}
 // Beschriftung "1943" in der Mitte des Pfeils
 arrow.bindTooltip("1943", { 
     permanent: true,     // Immer sichtbar
