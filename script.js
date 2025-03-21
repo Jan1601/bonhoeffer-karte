@@ -9,7 +9,7 @@ L.tileLayer('https://tile.openstreetmap.de/{z}/{x}/{y}.png', {
 // Städte mit Koordinaten und Infos
 var locations = [
     { name: "Berlin", coords: [52.5200, 13.4050], info: "." },
-    { name: "Breslau", coords: [51.1079, 17.0385], info: "Dietrich Bonhoeffer wurde am 4. Februar 1906 in Breslau geboren. Er hatte insgesamt acht Geschwister. Sein Vater Karl Bonhoeffer war Psychiater und Neurologe. Seine Mutter Paula Bonhoeffer war Lehrerin." },
+    { name: "Breslau", coords: [51.1079, 17.0385], info: "Dietrich Bonhoeffer wurde am 4. Februar 1906 in Breslau geboren. Er hatte insgesamt acht Geschwister. Sein Vater Karl Bonhoeffer war Psychiater und Neurologe. Seine Mutter Paula Bonhoeffer war Lehrerin. Dietrichs Mutter hat die Kinder in den ersten Jahren zu Hause unterrichtet. Dabei hat sie auf eine christliche Erziehung geachtet, obwohl Dietrichs Vater nicht religiös war. Daher war die auch nur selten in Gottesdiensten." },
     { name: "Flossenbürg", coords: [49.7325, 12.3478], info: "Hier wurde Bonhoeffer 1945 hingerichtet." },
     { name: "Tübingen", coords: [48.5216, 9.0576], info: "Studium und theologische Arbeit." },
     { name: "London", coords: [51.5074, -0.1278], info: "Bonhoeffer arbeitete als Pastor in einer deutschen Gemeinde." },
