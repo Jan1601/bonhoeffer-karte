@@ -22,7 +22,8 @@ var locations = [
 locations.forEach(location => {
     L.marker(location.coords)
         .addTo(map)
-        .bindPopup(`<b>${location.name}</b><br>${location.info}`);
+        .bindPopup(`<b>${location.name}</b><br><p>${location.info}</p>`);
+});
 });
 // Koordinaten für Berlin und London
 // Koordinaten für Berlin und London
