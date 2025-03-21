@@ -8,7 +8,7 @@ L.tileLayer('https://tile.openstreetmap.de/{z}/{x}/{y}.png', {
 
 // Städte mit Koordinaten und Infos
 var locations = [
-    { name: "Berlin", coords: [52.5200, 13.4050], info: "." },
+    { name: "Berlin", coords: [52.5200, 13.4050], info: "1912 zog Dietrich Bonhoeffer mit seiner Familie nach Berlin, da sein Vater an der Klinik und Poliklinik für Nervenkrankheiten der Charite Berlin zum Direktor ernannt wurde. Zu dieser Zeit (1916-1918) hat Bonhoeffer angefangen, sich mit den Fragen des Todes und der Ewigkeit auseinanderzusetzen. Ein Grund dafür war der Soldatentod seines zweitältesten Bruders und das Ableben seiner Mutter, welches ihn in große Trauer versetzte. 1923 hat Dietrich Bonhoeffer im Alter von 17 Jahren das Abitur bestanden." },
     { name: "Breslau", coords: [51.1079, 17.0385], info: "Dietrich Bonhoeffer wurde am 4. Februar 1906 in Breslau geboren. Er hatte insgesamt acht Geschwister. Sein Vater Karl Bonhoeffer war Psychiater und Neurologe. Seine Mutter Paula Bonhoeffer war Lehrerin. Dietrichs Mutter hat die Kinder in den ersten Jahren zu Hause unterrichtet. Dabei hat sie auf eine christliche Erziehung geachtet, obwohl Dietrichs Vater nicht religiös war. Daher war die auch nur selten in Gottesdiensten." },
     { name: "Flossenbürg", coords: [49.7325, 12.3478], info: "Hier wurde Bonhoeffer 1945 hingerichtet." },
     { name: "Tübingen", coords: [48.5216, 9.0576], info: "Studium und theologische Arbeit." },
