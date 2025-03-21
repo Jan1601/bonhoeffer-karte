@@ -14,3 +14,10 @@ h1 {
     margin: 20px auto;
     border: 2px solid black;
 }
+<style>
+    .leaflet-popup-close-button {
+        width: 30px;        /* Größe des Buttons */
+        height: 30px;       /* Höhe des Buttons */
+        font-size: 20px;    /* Schriftgröße im Button */
+    }
+</style>
