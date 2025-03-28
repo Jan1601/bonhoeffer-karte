@@ -28,22 +28,3 @@ locations.forEach(location => {
             maxHeight: 400
         });
 });
-
-// Koordinaten für Berlin und London
-var berlin = [52.5200, 13.4050];  // Berlin
-var london = [51.5074, -0.1278];  // London
-
-// Blauer Pfeil von Berlin nach London
-var arrow = L.polyline([berlin, london], {
-    color: 'blue',       // Farbe des Pfeils
-    weight: 4,           // Linienstärke
-    opacity: 0.7,        // Transparenz
-    dashArray: '5, 10'   // Gepunktete Linie für besseren Look
-}).addTo(map);
-
-// Beschriftung "1943" in der Mitte des Pfeils
-arrow.bindTooltip("1943", { 
-    permanent: true,     // Immer sichtbar
-    direction: "center", // Positioniert in der Mitte
-    className: "arrow-label"
-});
