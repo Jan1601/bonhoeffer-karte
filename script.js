@@ -27,9 +27,10 @@ var locations = [
 locations.forEach(location => {
     L.marker(location.coords)
         .addTo(map)
-        .bindPopup("<b>" + location.name + "</b><br>" + location.info, {
-            maxWidth: 700,  
-            minWidth: 500,
-            maxHeight: 400
+        .bindPopup("<b>" + location.name + "</b><br>" + location.info)
+.setPopupOptions({
+    maxWidth: 700,
+    minWidth: 500,
+    maxHeight: 400
         });
 });
