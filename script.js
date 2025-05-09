@@ -22,5 +22,5 @@ var locations = [
 // Marker für jede Stadt hinzufügen
 locations.forEach(function(location) {
     var marker = L.marker(location.coords).addTo(map);
-    marker.bindPopup("<div style='max-width: 400px;'>" + "<b>" + location.name + "</b><br>" + location.info + "</div>");
+    marker.bindPopup("<div style='max-width: 500px;'>" + "<b>" + location.name + "</b><br>" + location.info + "</div>");
 });
