@@ -27,3 +27,4 @@ locations.forEach(location => {
             minWidth: 500,
             maxHeight: 400
         });
+});
